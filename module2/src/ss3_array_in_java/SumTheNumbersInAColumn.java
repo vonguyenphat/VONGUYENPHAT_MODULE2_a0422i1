@@ -13,27 +13,27 @@ public class SumTheNumbersInAColumn {
             row = scanner.nextInt();
             System.out.print("Nhập số cột: ");
             column = scanner.nextInt();
-            if (row!=column){
+            if (row != column) {
                 System.out.println("Số hàng và số cột phải bằng nhau!!!");
             }
-        }while (row!=column);
+        } while (row != column);
 
         int[][] arr = new int[row][column];
 
-        for (int i=0;i<row;i++){
-            for (int j=0;j<column;j++){
-                System.out.print("A["+i+"]["+j+"] = ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print("A[" + i + "][" + j + "] = ");
                 arr[i][j] = scanner.nextInt();
             }
         }
         int sum = 0;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                if (i==j){
+                if (i == j) {
                     sum += arr[i][j];
                 }
             }
         }
-        System.out.println("tổng các số ở đường chéo chính của ma trận: "+sum);
+        System.out.println("tổng các số ở đường chéo chính của ma trận: " + sum);
     }
 }

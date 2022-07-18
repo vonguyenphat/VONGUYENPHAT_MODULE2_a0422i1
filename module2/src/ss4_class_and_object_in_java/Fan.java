@@ -1,10 +1,10 @@
 package ss4_class_and_object_in_java;
 
 public class Fan {
-    public  static final int   SLOW = 1 ;
-    public  static final int  MEDIUM = 2;
-    public  static final int FAST = 3;
-    private int speed = SLOW ;
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
+    private int speed = SLOW;
     private boolean on = false;
     private double radius = 5;
     private String color = "blue";
@@ -40,10 +40,11 @@ public class Fan {
     public void setColor(String color) {
         this.color = color;
     }
-    public String toString(){
-        if (this.on){
-            return "speed = "+getSpeed()+"; radius = " +getRadius()+"; color "+getColor() +"; Quạt đang bật" ;
-        }else return " radius = " +getRadius()+"; color "+getColor() +"; Quạt đang tắt" ;
+
+    public String toString() {
+        if (this.on) {
+            return "speed = " + getSpeed() + "; radius = " + getRadius() + "; color " + getColor() + "; Quạt đang bật";
+        } else return " radius = " + getRadius() + "; color " + getColor() + "; Quạt đang tắt";
     }
 
     public static void main(String[] args) {
@@ -52,9 +53,9 @@ public class Fan {
         fan1.setRadius(10);
         fan1.setColor("Yellow");
         fan1.setOn(true);
-        System.out.println("Fan1 = "+fan1.toString());
+        System.out.println("Fan1 = " + fan1.toString());
         Fan fan2 = new Fan();
         fan2.setSpeed(MEDIUM);
-        System.out.println("Fan2 = "+fan2.toString());
+        System.out.println("Fan2 = " + fan2.toString());
     }
 }

@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class QuadraticEquation {
     private double a, b, c;
-    public QuadraticEquation(){
+
+    public QuadraticEquation() {
 
     }
+
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;
@@ -36,14 +38,17 @@ public class QuadraticEquation {
     public void setC(double c) {
         this.c = c;
     }
-    public double getDiscriminant(){
-      return getB()*getB()-4*getA()*getC();
+
+    public double getDiscriminant() {
+        return getB() * getB() - 4 * getA() * getC();
     }
-    public double getRoot1(){
-        return (-getB()+Math.sqrt(getDiscriminant()))/2*getA();
+
+    public double getRoot1() {
+        return (-getB() + Math.sqrt(getDiscriminant())) / 2 * getA();
     }
-    public double getRoot2(){
-        return (-getB()-Math.sqrt(getDiscriminant()))/2*getA();
+
+    public double getRoot2() {
+        return (-getB() - Math.sqrt(getDiscriminant())) / 2 * getA();
     }
 
     public static void main(String[] args) {
@@ -56,13 +61,13 @@ public class QuadraticEquation {
         System.out.print("c = ");
 
         double c = scanner.nextInt();
-        QuadraticEquation quadraticEquation = new QuadraticEquation(a,b,c);
-        if (quadraticEquation.getDiscriminant()==0){
-            System.out.println("x1 = x2 = "+quadraticEquation.getRoot2());
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
+        if (quadraticEquation.getDiscriminant() == 0) {
+            System.out.println("x1 = x2 = " + quadraticEquation.getRoot2());
         }
-        if (quadraticEquation.getDiscriminant()>0){
-            System.out.println("Phương trình có hai nghiệm: \n x1 = "+quadraticEquation.getRoot1()+" \n x2 = "+quadraticEquation.getRoot2());
-        }else System.out.println("The equation has no roots");
+        if (quadraticEquation.getDiscriminant() > 0) {
+            System.out.println("Phương trình có hai nghiệm: \n x1 = " + quadraticEquation.getRoot1() + " \n x2 = " + quadraticEquation.getRoot2());
+        } else System.out.println("The equation has no roots");
     }
 
 }

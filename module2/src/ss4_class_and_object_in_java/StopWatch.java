@@ -20,24 +20,28 @@ public class StopWatch {
     public void setEndTime(long endTime) {
         this.endTime = endTime;
     }
-    public StopWatch(){
+
+    public StopWatch() {
         starTime = System.currentTimeMillis();
     }
-    public void  start(){
+
+    public void start() {
         starTime = System.currentTimeMillis();
     }
-    public void end(){
+
+    public void end() {
         endTime = System.currentTimeMillis();
     }
-    public long getElapsedTime(){
-        return endTime-starTime;
+
+    public long getElapsedTime() {
+        return endTime - starTime;
     }
 
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
-        long x = 0 ;
-        for (long i = 0; i < 100000000 ; i++) {
+        long x = 0;
+        for (long i = 0; i < 100000000; i++) {
         }
         stopWatch.end();
         System.out.println(stopWatch.getElapsedTime());
