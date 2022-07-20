@@ -1,4 +1,4 @@
-package ss5_access_modifier_static_method_static_property;
+package ss5_access_modifier_static_method_static_property.student;
 
 public class Student {
     public String name = "John";
