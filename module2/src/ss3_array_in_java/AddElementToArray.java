@@ -35,22 +35,22 @@ public class AddElementToArray {
         do {
             System.out.print("Nhập vị trí cần chèn: ");
             index = scanner.nextInt();
-            if (index <= 0 || index >= size){
+            if (index <= 0 || index >= size) {
                 System.out.println(" Không chèn được phần tử vào mảng.!!!");
             }
-        }while (index <= 0 || index >= size);
+        } while (index <= 0 || index >= size);
 
-        int[] newValue = new int[value.length+1];// thêm mảng value 1 giá trị
-        for (int i=0; i<value.length;i++){
+        int[] newValue = new int[value.length + 1];// thêm mảng value 1 giá trị
+        for (int i = 0; i < value.length; i++) {
             newValue[i] = value[i];
         }
-        for (int i = newValue.length-1;i>index;i--){
-            newValue[i]= newValue[i-1];
+        for (int i = newValue.length - 1; i > index; i--) {
+            newValue[i] = newValue[i - 1];
         }
         newValue[index] = add;
-        System.out.println("Mảng sau khi thêm giá trị "+add+" tại vị trí "+index+" là!");
+        System.out.println("Mảng sau khi thêm giá trị " + add + " tại vị trí " + index + " là!");
         for (int i = 0; i < newValue.length; i++) {
-            System.out.print(" "+newValue[i]);
+            System.out.print(" " + newValue[i]);
         }
     }
 }

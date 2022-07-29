@@ -3,8 +3,8 @@ package ss4_class_and_object_in_java;
 import javafx.scene.paint.Stop;
 
 public class StopWatch {
-    private long starTime, endTime;
-
+    private long starTime;
+    private long  endTime;
     public long getStarTime() {
         return starTime;
     }

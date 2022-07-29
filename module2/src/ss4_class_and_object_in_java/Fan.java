@@ -53,9 +53,10 @@ public class Fan {
         fan1.setRadius(10);
         fan1.setColor("Yellow");
         fan1.setOn(true);
-        System.out.println("Fan1 = " + fan1.toString());
+        System.out.println("Fan1 = " + fan1);
+
         Fan fan2 = new Fan();
         fan2.setSpeed(MEDIUM);
-        System.out.println("Fan2 = " + fan2.toString());
+        System.out.println("Fan2 = " + fan2);
     }
 }

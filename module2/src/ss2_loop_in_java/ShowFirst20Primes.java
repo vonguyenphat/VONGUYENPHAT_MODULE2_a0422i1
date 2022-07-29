@@ -32,5 +32,5 @@ public class ShowFirst20Primes {
             num++;
         }
     }
-    }
+}
 

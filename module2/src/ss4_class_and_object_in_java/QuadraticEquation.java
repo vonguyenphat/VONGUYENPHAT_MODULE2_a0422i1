@@ -61,6 +61,7 @@ public class QuadraticEquation {
         System.out.print("c = ");
 
         double c = scanner.nextInt();
+
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         if (quadraticEquation.getDiscriminant() == 0) {
             System.out.println("x1 = x2 = " + quadraticEquation.getRoot2());
@@ -69,5 +70,4 @@ public class QuadraticEquation {
             System.out.println("Phương trình có hai nghiệm: \n x1 = " + quadraticEquation.getRoot1() + " \n x2 = " + quadraticEquation.getRoot2());
         } else System.out.println("The equation has no roots");
     }
-
 }

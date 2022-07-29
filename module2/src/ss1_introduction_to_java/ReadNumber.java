@@ -7,8 +7,8 @@ public class ReadNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input Number: ");
         int number = scanner.nextInt();
-        if (number>=0&&number<10){
-            switch (number){
+        if (number >= 0 && number < 10) {
+            switch (number) {
                 case 0:
                     System.out.println(" zero ");
                     break;
@@ -40,9 +40,9 @@ public class ReadNumber {
                     System.out.println(" nine ");
                     break;
             }
-        }else if (number<20){
-            int little20 = number%10;
-            switch (little20){
+        } else if (number < 20) {
+            int little20 = number % 10;
+            switch (little20) {
                 case 0:
                     System.out.println("ten");
                     break;
@@ -74,10 +74,10 @@ public class ReadNumber {
                     System.out.println("nineteen");
                     break;
             }
-        }else if (number<100){
-            int unit = number%10;
-            int dozen = (number/10);
-            switch (dozen){
+        } else if (number < 100) {
+            int unit = number % 10;
+            int dozen = (number / 10);
+            switch (dozen) {
                 case 2:
                     System.out.println(" twenty ");
                     break;
@@ -103,7 +103,7 @@ public class ReadNumber {
                     System.out.println(" ninety ");
                     break;
             }
-            switch (unit){
+            switch (unit) {
                 case 1:
                     System.out.println(" one ");
                     break;
@@ -132,10 +132,10 @@ public class ReadNumber {
                     System.out.println(" nine ");
                     break;
             }
-        } else if (number<1000){
-            int hundreds = number/100;
-            int dozens = (number%100)/10;
-            int units = ((number%100)%10);
+        } else if (number < 1000) {
+            int hundreds = number / 100;
+            int dozens = (number % 100) / 10;
+            int units = ((number % 100) % 10);
             switch (hundreds) {
                 case 1:
                     System.out.println("one hundred");
@@ -166,7 +166,7 @@ public class ReadNumber {
                     break;
 
             }
-            switch (dozens){
+            switch (dozens) {
 
                 case 1:
                     System.out.println(" and eleven ");
@@ -197,7 +197,7 @@ public class ReadNumber {
                     System.out.println(" and ninety ");
                     break;
             }
-            switch (units){
+            switch (units) {
 
                 case 2:
                     System.out.println(" two ");

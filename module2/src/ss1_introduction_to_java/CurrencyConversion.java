@@ -7,7 +7,7 @@ public class CurrencyConversion {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input Money USD: ");
         double money = scanner.nextDouble();
-        double rate = 23000*money;
-        System.out.println("Với "+ money+" USD = " +rate+ " VND");
+        double rate = 23000 * money;
+        System.out.println("Với " + money + " USD = " + rate + " VND");
     }
 }
